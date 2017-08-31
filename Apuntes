@@ -1,0 +1,105 @@
+
+#####################
+#	typeScript		#
+#####################
+
+#Para realizar una compilación de un archivo de tipo tsc, se debe escribir el siguiente comando:
+> tsc nombreArchivoTsc
+ 
+#Para dejar el compilador de typeScript en modo de observador(Que no se requiera que siempre se lanze el comando anterior, se debe ejecutar el siguiente comando
+> tsc nombreArchivoTsc -w
+#tsconfig.json sirve para dar reglas al compilador de tsc.
+
+#Para dejar toda un proyecto de tipo tsc se debe escribir el siguiente comando, este comando genera el archivo tsconfig.json
+> tsc -init
+
+##Variables let y const
+let: valor que no cambia en los alcances definidos
+
+############Introducción al tsc#############
+
+JS carece:
+-Tipos de variables.
+
+-Errores de tiempo de escritura
+-Autocompletación dependiendo del tipo de la variables
+-Metodo estatico de programación
+-Clases y modulos
+-Entre otras cosas...
+
+###############
+#	ANGULAR	  #
+###############
+
+#Este comando sirve para crear una nueva app de angular
+>ng new my-app 
+
+
+#Este comando sirve para levantar el servicio que se encarga de visualizar la app
+>ng serve --open 
+
+#####Estructura de un proyecto Angular##########
+
+
+#e2e, carpeta dedicada para las pruebas de la aplicación
+|
+#src
+	|
+	#app, contiene la primera pantalla de la aplicación
+		|
+		app.component.ts, es el codigo que responde a html
+		|
+		app.module.ts, librerías del componente. Se referencian los componentes y las importaciones del core de Angular que se verán reflejadas en el componente. Por otro lado estan los providers, que anteriormente se llamaban servicios, que se encargan de traer datos 
+
+		Ademas existe el archivo bootstrap que se define cual va ser el component que se va a cargar al principio.
+		|
+		app.component.css, sirve para estilizar solo el componente.
+		|
+		app.component.html
+		|
+		app.component.spec.ts, son para hacer pruebas.
+	#assets, recursos estaticos, fotos, videos, etc
+	|
+	#enviroments, entornos de desarollo y producción.
+	|
+	index.html, el contenido de todo la aplicacion
+	|
+	main.ts, define el tipo de gui que se presentará, web o celular
+	|
+	polyfils, aumentan la compatibilidad de nuestras aplicaciones.
+	|
+	styles, estilos de globales
+	|
+	test.ts, para las pruebas
+	|
+	typings, es para definir variables globales. tal como declare $var asd;
+
+|
+.angular-cli.json, es un archivo de configuración propio del CLI
+|
+.editorconfig, configuraciones del editor
+|
+.gitignore, archivos y carpetas descartados por git al momento de hacer |	un push
+|
+karma.conf.js, es utilzado para hacer prubas unitarias
+|
+package.json, controla el ciclo de vida del proyecto
+|
+protactor.config.js, archivo de configuración para hacer pruebas.
+|
+tsconfig.json, archivo de configuración de tsc
+|
+tslint.json, es un archivo que ayuda para que se vean bien los errores en el editor
+
+
+
+#Comando para generar componentes
+> ng g c nombreDelComponente
+
+
+
+
+
+
+
+
